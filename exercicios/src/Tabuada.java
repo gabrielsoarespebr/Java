@@ -2,17 +2,17 @@ import java.util.Scanner;
 
 public class Tabuada {
     public static void main(String[] args){
-        Scanner scan = new Scanner(System.in);
+        try (Scanner scan = new Scanner(System.in)) {
+            int numero;
+            int contador;
 
-        int numero;
-        int contador;
+            System.out.println("Programa de tabuada.");
+            System.out.println("Insira o numero:");
+            numero = scan.nextInt();
 
-        System.out.println("Programa de tabuada.");
-        System.out.println("Insira o numero:");
-        numero = scan.nextInt();
-
-        for(contador=1;contador<11;contador++){
-            System.out.println(numero + " x " + contador + " = " + (numero*contador));
+            for(contador=1;contador<11;contador++){
+                System.out.println(numero + " x " + contador + " = " + (numero*contador));
+            }
         }
     }   
 }
