@@ -1,6 +1,6 @@
 public class CalculadoraDivisao {
-    public int main(int num1,int num2){
-        int divisao = num1 / num2;
+    public double main(double num1,double num2){
+        double divisao = num1 / num2;
         return divisao;
     }
 }

@@ -12,11 +12,11 @@ public class Calculadora {
             System.out.print("Escolha a operacao: ");
             String operacao = input.next();
             System.out.print("Insira o primeiro numero: ");
-            int num1 = input.nextInt();
+            double num1 = input.nextInt();
             System.out.print("Insira o segundo numero: ");
-            int num2 = input.nextInt();
+            double num2 = input.nextInt();
 
-            int resultado = 0;
+            double resultado = 0;
 
             switch (operacao) {
                 case "+":
