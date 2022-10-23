@@ -1,7 +1,7 @@
-package udemy;
+package udemy.trianguloheron;
 import java.util.Scanner;
 
-public class TrianguloMaiorArea {
+public class TrianguloHeronSemPOO {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int qtdTriangulos = 2;
