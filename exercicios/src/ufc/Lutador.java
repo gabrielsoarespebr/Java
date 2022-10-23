@@ -1,3 +1,4 @@
+package ufc;
 public class Lutador {
     // Atributos
     private String nome;
@@ -98,7 +99,7 @@ public class Lutador {
         this.empates = empates;
     }
 
-    // Metodos abstratos
+    // Metodos
     public void apresentar() {
         System.out.println("");
         System.out.println("CHEGOU A HORA!");

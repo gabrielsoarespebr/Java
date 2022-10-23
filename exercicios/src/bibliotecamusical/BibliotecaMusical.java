@@ -1,3 +1,4 @@
+package bibliotecamusical;
 public class BibliotecaMusical {
     public static void main(String[] args) {
         MusicaInfo dados1 = new MusicaInfo("Djavan","Oceano","MPB");

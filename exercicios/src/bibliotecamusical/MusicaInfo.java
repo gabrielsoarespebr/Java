@@ -1,3 +1,4 @@
+package bibliotecamusical;
 public class MusicaInfo {
     private String artista;
     private String musica;
