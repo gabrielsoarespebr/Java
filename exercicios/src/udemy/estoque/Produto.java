@@ -5,9 +5,16 @@ public class Produto {
     public double preco;
     public int quantidade;
 
-    public String Status() {
-        return "Informacoes do produto: " + nome + " custa R$" + preco + ", e as " + quantidade
-                + " unidades representam um valor total de R$" + ValorTotalDeEstoque() + " no estoque.";
+    public String toString() { // Sobrescrevendo classe toString
+        return "Informacoes do produto: "
+                + nome
+                + " custa R$"
+                + String.format("%.2f", preco) //String.format para colocar duas casas decimais
+                + ", e as "
+                + quantidade
+                + " unidades representam um valor total de R$"
+                + String.format("%.2f", ValorTotalDeEstoque())
+                + " no estoque.";
     }
 
     public double ValorTotalDeEstoque() {

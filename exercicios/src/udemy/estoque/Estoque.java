@@ -16,7 +16,7 @@ public class Estoque {
         System.out.print("Quantidade no estoque: ");
         p.quantidade = scan.nextInt();
 
-        System.out.println(p.Status());
+        System.out.println(p); //Forma valida porque a classe toString foi sobreposta em Produto, e o println reconhece seu parametro como string
 
         int opcao;
         do {
@@ -26,12 +26,12 @@ public class Estoque {
             if (opcao == 1) {
                 System.out.print("Insira a quantidade para ADICIONAR: ");
                 p.Adicionar(scan.nextInt());
-                System.out.println(p.Status());
+                System.out.println(p);
             }
             if (opcao == 2) {
                 System.out.print("Insira a quantidade para REMOVER: ");
                 p.Remover(scan.nextInt());
-                System.out.println(p.Status());
+                System.out.println(p);
             }
         } while (opcao != 0);
 
