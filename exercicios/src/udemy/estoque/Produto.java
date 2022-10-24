@@ -5,6 +5,12 @@ public class Produto {
     public double preco;
     public int quantidade;
 
+    public Produto(String n, double p, int q){
+        nome = n;
+        preco = p;
+        quantidade = q;
+    }
+
     public String toString() { // Sobrescrevendo classe toString
         return "Informacoes do produto: "
                 + nome

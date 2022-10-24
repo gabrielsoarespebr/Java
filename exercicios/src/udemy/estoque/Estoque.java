@@ -5,16 +5,17 @@ import java.util.Scanner;
 public class Estoque {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        Produto p = new Produto();
 
         System.out.println();
         System.out.println("--- ESTOQUE ---");
         System.out.print("Nome: ");
-        p.nome = scan.next();
+        String nome = scan.next();
         System.out.print("Preco da unidade: R$");
-        p.preco = scan.nextDouble();
+        double preco = scan.nextDouble();
         System.out.print("Quantidade no estoque: ");
-        p.quantidade = scan.nextInt();
+        int quantidade = scan.nextInt();
+        Produto p = new Produto(nome, preco, quantidade);
+
 
         System.out.println(p); //Forma valida porque a classe toString foi sobreposta em Produto, e o println reconhece seu parametro como string
 
