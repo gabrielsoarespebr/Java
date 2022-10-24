@@ -1,3 +1,4 @@
+package matematica;
 import java.util.Random;
 
 public class NumerosAleatorios {
